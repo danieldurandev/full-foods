@@ -9,7 +9,7 @@ export const DetailPage = () => {
 
   const getRecipe = async () => {
     let { data } = await axios.get(
-      `http://localhost:3001/recipes/${location.pathname.substring(8)}`
+      `https://food-api-x3n1.onrender.com/${location.pathname.substring(8)}`
     );
     setRecipe({ ...data.recipe });
   };

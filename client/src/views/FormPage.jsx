@@ -84,7 +84,7 @@ export const FormPage = () => {
     }
 
     try {
-      await axios.post("http://localhost:3001/recipes", recipe);
+      await axios.post("https://food-api-x3n1.onrender.com/recipes", recipe);
       dispatch(stateOfCharge());
       onResetForm();
       setDiets([]);
