@@ -1,0 +1,32 @@
+.navbar {
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(245, 222, 179, 0.616);
+  backdrop-filter: blur(5px);
+  /* background-color: aqua; */
+}
+
+.select {
+  border-radius: 4px;
+  background-color: #f3edec;
+  background-color: rgba(0, 0, 0, 0.616);
+  border: 1px solid wheat;
+  color: wheat;
+  text-align: center;
+}
+
+.input {
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #f3edec;
+  background-color: rgba(0, 0, 0, 0.616);
+  border: 1px solid wheat;
+  color: wheat;
+  margin-right: 5px;
+  height: 31px;
+}
+
+.form {
+  display: flex;
+}

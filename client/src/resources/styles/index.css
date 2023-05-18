@@ -1,0 +1,294 @@
+@font-face {
+  font-family: "Patrick";
+  src: url("../fonts/PatrickHand.ttf");
+}
+
+/* *,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: wheat;
+  background: url("../img/pattern.jpg");
+  background-size: 550px;
+}
+
+#root {
+  height: 100vh;
+  /* background-color: blueviolet; */
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0.616);
+
+  border-radius: 4px;
+  font-weight: bold;
+  border: 1px solid wheat;
+  color: wheat;
+  font-size: 20px;
+  /* padding: 10px 45px; */
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.808);
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  /* background-color: rgb(39, 105, 202); */
+  color: white;
+  border-color: #fafafa;
+  transition: 0.3s;
+}
+
+.btnav {
+  padding: 5px;
+  /* border-style: none; */
+}
+
+.btnpage {
+  background-color: #ee3a1a;
+  color: wheat;
+  margin: 4px;
+  text-transform: uppercase;
+}
+
+.btn-add {
+  background-color: #49ec08;
+  font-size: 16px;
+}
+
+.btn-clear {
+  background-color: #ee3a1a;
+  font-size: 16px;
+}
+
+.btn-sub {
+  background-color: #49ec08;
+  color: #fafafa;
+  font-size: 20px;
+}
+
+.btnav-exit {
+  background-color: #ee3a1a;
+  padding: 4px;
+  /* border-style: none; */
+}
+
+.btnlp {
+  padding: 20px;
+  font-size: 30px;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  text-decoration: none;
+  color: wheat;
+}
+
+.navigation {
+  margin: 0 auto;
+}
+
+/*DetailPage*/
+
+.detail {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  margin: 32px auto 32px auto;
+  max-width: 700px;
+  font-weight: 900;
+  border-radius: 16px;
+  background-color: rgba(245, 222, 179, 0.616);
+  backdrop-filter: blur(5px);
+  color: rgb(255, 255, 255);
+  /* text-align: center; */
+  /* border: 1px solid wheat; */
+}
+
+.imagedetail {
+  min-width: 90%;
+  max-width: 90%;
+  align-self: center;
+  margin: 4px;
+  border-radius: 8px;
+}
+
+.textdetail {
+  border-radius: 8px;
+
+  text-align: center;
+  margin: 4px;
+  background-color: rgba(0, 0, 0, 0.616);
+}
+.boxdetail {
+  border-radius: 8px;
+  margin: 4px;
+  background-color: rgba(0, 0, 0, 0.616);
+}
+
+.listdetail {
+  display: flex;
+  justify-content: space-around;
+}
+
+.itemdetail {
+  text-align: center;
+  margin: 2px;
+  padding: 4px;
+  background-color: #ee3a1a;
+  border-radius: 4px;
+}
+
+.boxtextdetail {
+  text-align: center;
+  margin: 4px;
+}
+
+/*FormPage*/
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 768px;
+  padding: 32px;
+  margin: 32px 0 32px 0;
+  background-color: rgba(245, 222, 179, 0.616);
+  backdrop-filter: blur(5px);
+  color: wheat;
+  border-radius: 16px;
+}
+
+.divform {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.616);
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+
+.labelform {
+  width: 100%;
+  margin: 4px;
+  text-transform: uppercase;
+}
+
+.inputform {
+  width: 100%;
+  margin: 8px;
+  border-radius: 4px;
+  border: 1px solid wheat;
+  background-color: transparent;
+
+  color: wheat;
+}
+
+.inputstep {
+  width: 80%;
+  margin: 8px;
+  border-radius: 8px;
+  margin: 8px;
+  border-radius: 4px;
+  border: 1px solid wheat;
+  background-color: transparent;
+
+  color: wheat;
+}
+
+.buttonstep {
+  width: 7%;
+  margin: 8px 4px 8px 0px;
+}
+
+.checkform {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.labelcheck {
+  width: 18%;
+  margin-top: 8px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.error {
+  background-color: red;
+  margin-left: 8px;
+  border-radius: 4px;
+  padding: 2px;
+}
+.green {
+  border-radius: 4px;
+  font-weight: bold;
+
+  background-color: green;
+}
+
+.red {
+  border-radius: 4px;
+  font-weight: bold;
+  background-color: red;
+}
+
+.back {
+  margin: 32px auto 32px 32px;
+  font-size: 32px;
+}
+.backflex {
+  width: 0%;
+}
+
+.formdiv {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*Loader*/
+.custom-loader {
+  width: 100px;
+  height: 100px;
+  display: grid;
+  margin: 280px auto 0 auto;
+}
+.custom-loader::before,
+.custom-loader::after {
+  content: "";
+  grid-area: 1/1;
+  --c: radial-gradient(farthest-side, wheat 92%, #ee3a1a);
+  background: var(--c) 50% 0, var(--c) 50% 100%, var(--c) 100% 50%,
+    var(--c) 0 50%;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  animation: s2 1s infinite;
+}
+.custom-loader::before {
+  margin: 8px;
+  filter: hue-rotate(45deg);
+  background-size: 16px 16px;
+  animation-timing-function: linear;
+}
+
+@keyframes s2 {
+  100% {
+    transform: rotate(0.5turn);
+  }
+}
